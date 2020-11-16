@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de atendimento</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="telaCadastro.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro do Atendimento </h2>
+        <form action="/action_page.php">
+            <!---Nome do Aluno-->
+            <div class="form-group">
+                <label for="nomeA">Nome do Aluno</label>
+                <input type="text" class="form-control" id="nomeA" placeholder="Aluno" name="nomeA" required>
+            </div>
+            <!---Nome do Servidor-->
+            <div class="form-group">
+                <label for="nomeS">Nome do Servidor</label>
+                <input type="text" class="form-control" id="nomeS" placeholder="Servidor" name="nomeS" required>
+            </div>
+            <!--Calendario-->
+            <div class="form-group">
+                <label for="calendario">Calendário</label>
+                <input type="date" class="form-control" id="calendario" name="calendario" required>
+            </div>
+            <!--Horario-->
+            <div class="form-group">
+                <label for="hoario">Horário</label>
+                <input type="time" class="form-control" id="horario" name="horario" required>
+            </div>
+
+            <button type="search" class="btn btn-primary">Procurar</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

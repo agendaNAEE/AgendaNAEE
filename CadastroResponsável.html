@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroResponsável</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="telaCadastro.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro do Responsável </h2>
+        <form action="/action_page.php">
+            <!---Nome responsavel-->
+            <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" name="nome" required>
+            </div>
+            <!---Nome do aluno-->
+            <div class="form-group">
+                <label for="nomAluno">Nome do aluno:</label>
+                <input type="text" class="form-control" id="nomAluno" placeholder="Nome do aluno pelo qual você é responsável" name="nomAluno" required>
+            </div>
+            <!---Grau parentesco-->
+            <div class="form-group">
+                <label for="gParentesco">Grau de parentesco:</label>
+                <input type="text" class="form-control" id="gParentesco" placeholder="Ex: Mãe" name="gParentesco" required>
+            </div>
+            <!---Email-->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+            </div>
+            <!---Senha-->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
+            </div>
+             <!---Confirmar senha-->
+             <div class="form-group">
+                <label for="confirm_senha">Confirme senha:</label>
+                <input type="password" class="form-control" id="confirm_senha" placeholder="Confirme sua senha" name="confirm_senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body{
+    margin: 3%;
+}
+h2{
+    color:#3c5a9c;
+}
+
+.btn-primary{
+    background-color: #3c5a9c;
+    min-width: 100px;
+}
+.card{
+    margin: 3%;
+   max-width: 700px;
+    max-height: 400px;
+    text-align: center;
+    border:none;
+}
+.btn-outline-light{
+    min-width: 200px;
+    min-height: 80px;
+    max-width: 700px;
+    max-height: 400px;
+    background-color: whitesmoke;
+    color:  #3c5a9c;
+    outline-color: #3c5a9c;
+}
+.btn-outline-primary :active:hover{
+    background-color:#3c5a9c ;
+
+}

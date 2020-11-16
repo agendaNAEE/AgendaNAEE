@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroAluno</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="telaCadastro.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro do Aluno </h2>
+        <form action="/action_page.php">
+            <!---Nome-->
+            <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome Completo" name="nome" required>
+            </div>
+            <!---RA-->
+            <div class="form-group">
+                <label for="RA"> Registro Acadêmico:</label>
+                <input type="number" class="form-control" id="RA" placeholder="Registro Acadêmico" name="RA" required>
+            </div>
+            <!---Email-->
+            <div class="form-group">
+                <label for="email">Email Acadêmico:</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+            </div>
+            <!---Curso-->
+            <div class="form-group">
+                <label for="listCurso">Curso:</label> <br>
+                <select name="listCurso" id="listCurso">
+                    <option value="informática">Informática</option>
+                    <option value="administração">Administração</option>
+                    <option value="metalurgia">Metalurgia</option>
+                </select>
+            </div>
+            <!---Período/Ano-->
+            <div class="form-group">
+                <label for="periodo_ano">Período/Ano:</label><br>
+                <select name = "periodo_ano" id="periodo_ano">
+                    <option value="1ano">1° ano</option>
+                    <option value="2ano">2° ano</option>
+                    <option value="3ano">3° ano</option>
+                    <option value="1periodo">1° período</option>
+                    <option value="2periodo">2° período</option>
+                    <option value="3periodo">3° período</option>
+                    <option value="4periodo">4° período</option>
+                    <option value="5periodo">5° período</option>
+                    <option value="6periodo">6° período</option>
+                    <option value="7periodo">7° período</option>
+                    <option value="8periodo">8° período</option>
+                    <option value="9periodo">9° período</option>
+                    <option value="10periodo">10° período</option>
+                </select>
+            </div>
+            <!---Senha-->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
+            </div>
+             <!---Senha-->
+             <div class="form-group">
+                <label for="confirm_senha">Confirmar senha:</label>
+                <input type="password" class="form-control" id="confirm_senha" placeholder="Confirme sua senha" name="confirm_senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
